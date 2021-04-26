@@ -2,7 +2,7 @@
 # GIT COMMANDS
 ***
 
-1. [Firts steps in git] (#paso1) 
+1. [Firts steps in git] (#firts-steps-in-git) 
 2. Create Alias to commands
 3. Create my firts proyect in git
 4. Add files to stage
@@ -25,7 +25,7 @@
 
 ***
 ***
-## <a id="paso1" />Header text
+
 ## FIRTS STEPS IN GIT
 
 Firts commands 
