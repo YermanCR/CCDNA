@@ -2,7 +2,7 @@
 # GIT COMMANDS
 ***
 
-1. [Firts steps in git] (#item1) 
+1. [Firts steps in git] (#id1) 
 2. Create Alias to commands
 3. Create my firts proyect in git
 4. Add files to stage
@@ -25,7 +25,7 @@
 
 ***
 ***
-<a name="item1"></a>
+<div id='id1' />
 ## FIRTS STEPS IN GIT
 
 Firts commands 
@@ -34,8 +34,9 @@ Firts commands
 +git config --global user.email "email.com"
 
 Location
-+git config --global -e	//para saber el usuario registrado en la maquina.
-+git config --global -l // Sin peligro a modificar el archivo.
+
++ git config --global -e	//para saber el usuario registrado en la maquina.
++ git config --global -l // Sin peligro a modificar el archivo.
 
 ##
 
