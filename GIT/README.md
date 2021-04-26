@@ -25,8 +25,8 @@
 
 ***
 ***
-<div id='id1' />
-## FIRTS STEPS IN GIT
+
+## FIRTS STEPS IN GIT <a name="id1"></a>
 
 Firts commands 
 
