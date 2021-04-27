@@ -3,25 +3,25 @@
 ***
 
 1. [Firts steps in git](#firts-steps-in-git) 
-2. Creating Alias to commands
-3. Creating my firts project in git
-4. Add files to stage
-5. Ignoring files
-6. "Diff" Command
-7. Commits
-8. Logs
-9. Reverse Commits
-10. Rename or Move
-11. Branches
-12. Tags
+2. [Creating Alias to commands](#creating-alias-to-commands)
+3. [Creating my firts project in git](#creating-my-firts-project-in-git)
+4. [Add files to stage](#add-files-to-stage)
+5. [Ignoring files](#ognoring-files)
+6. ["Diff" Command](#diif-command)
+7. [Commits](#commits)
+8. [Logs](#logs)
+9. [Reverse Commits](#reverse-commits)
+10. [Rename or Move](#rename-or-move)
+11. [Branches](#branches)
+12. [Tags](#tags)
 
 ***
 # GITHUB
 ***
 
-1. Firts steps
-2. Clone Command
-3. PULL PUSH & FETCH
+1. [Firts steps](#firts-steps)
+2. [Clone Command](#clone-command)
+3. [PULL PUSH & FETCH](#pull-push-&-fetch)
 
 ***
 ***
@@ -30,8 +30,8 @@
 
 Firts commands 
 
-+git config --global user.name "nickname"
-+git config --global user.email "email.com"
++ git config --global user.name "nickname"
++ git config --global user.email "email.com"
 
 Location
 
@@ -40,11 +40,11 @@ Location
 
 ## CREATING ALIAS TO COMMANDS
 
-+git config --global alias.lg "log --oneline --decorate --all --graph"
-+git lg
++ git config --global alias.lg "log --oneline --decorate --all --graph"
++ git lg
 
-+git config --global alias-s "status -s -b"
-+git s
++ git config --global alias-s "status -s -b"
++ git s
 
 Location
 
