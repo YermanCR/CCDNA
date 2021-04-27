@@ -1,0 +1,27 @@
+interface ethernet 1/1
+descrip WAN-R2-TO-XR
+ip address 172.16.16.5 255.255.255.252
+no shutdown
+
+interface ethernet 1/2
+descrip PC-2
+ip add 192.168.2.254 255.255.255.0
+no shutdown
+
+interface loopback 1
+descrip PRUEBA
+ip address 2.2.2.2 255.255.255.255
+no shutdown
+
+router bgp 200
+bgp router-id 2.2.2.2
+neighbor 172.16.16.6 remote-as 100
+
+address-family ipv4 unicast
+neighbor 172.16.16.6 activate
+network 192.168.2.0 mask 255.255.255.0
+network 2.2.2.2 mask 255.255.255.255
+
+
+
+

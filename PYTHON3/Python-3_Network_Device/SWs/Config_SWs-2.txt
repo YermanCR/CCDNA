@@ -1,0 +1,12 @@
+
+vlan 100
+name Datos
+vlan 200
+name Voz
+vlan 300
+name Video
+
+interfa vla 100
+ip add 172.16.100.254 255.255.255.0
+no shut
+

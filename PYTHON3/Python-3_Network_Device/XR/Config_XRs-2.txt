@@ -1,0 +1,54 @@
+inter GigabitEthernet0/0/0/2
+descrip WAN-TO-R1
+ipv4 add 172.16.16.2/30
+no shutdow
+
+interface giga 0/0/0/0
+descrip INTERNET
+ipv4 addres 192.168.122.100/24
+no shutdow
+
+interface giga 0/0/0/1
+descrip WAN-TO-R2
+ipv4 address 172.16.16.6/30
+no shut
+
+interface loopbac 1
+ipv4 address 3.3.3.3/32
+no shutdown
+
+root
+route-policy allow-bgp-all
+  pass
+  exit
+
+router bgp 100
+bgp router-id 3.3.3.3
+address-family ipv4 unicast
+network 3.3.3.3/32
+exit
+neighbor 172.16.16.5
+remote-as 200
+address-family ipv4 unicast
+route-policy allow-bgp-all in
+   route-policy allow-bgp-all out
+default-originate
+root
+
+router ospf 10
+area 0
+interface GigabitEthernet0/0/0/2
+
+root
+
+router static
+address-family ipv4 unicast
+0.0.0.0/0 giga 0/0/0/0
+
+
+
+
+
+root
+
+commit label CONFIG2

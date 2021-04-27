@@ -1,0 +1,7 @@
+
+import logging
+
+####DEBUG NETMIKO
+
+logging.basicConfig(filename='test.log', level=logging.DEBUG)
+logger = logging.getLogger("netmiko")

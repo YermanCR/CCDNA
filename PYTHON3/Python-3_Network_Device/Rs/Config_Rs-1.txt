@@ -1,0 +1,21 @@
+interface ethernet 2/0
+descrip WAN-R1-TO-XR
+ip address 172.16.16.1 255.255.255.252
+no shutdown
+
+interface ethernet2/1
+descrip PC-1
+ip address 192.168.1.254 255.255.255.0
+no shutdown
+
+interface loopback 1
+descrip PRUEBA
+ip add 1.1.1.1 255.255.255.255
+no shut
+
+router ospf 10
+router-id 1.1.1.1
+network 172.16.16.0 0.0.0.3 area 0
+network 192.168.1.0 0.0.0.255 area 0
+network 1.1.1.1 0.0.0.0 area 0
+
